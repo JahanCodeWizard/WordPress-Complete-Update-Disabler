@@ -68,3 +68,4 @@ add_filter( 'site_transient_update_core', function( $value ) {
     return $value;
 }, 9999 );
 
+?>
