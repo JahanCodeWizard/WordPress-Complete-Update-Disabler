@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Disable All Updates
- * Plugin URI:        https://example.com/disable-all-updates
+ * Plugin URI:        https://github.com/JahanCodeWizard/WordPress-Complete-Update-Disabler
  * Description:       Completely disables WordPress core, plugin, theme and translation updates (automatic + manual checks + notifications) when this plugin is active.
  * Version:           1.1.0
  * Requires at least: 6.0
