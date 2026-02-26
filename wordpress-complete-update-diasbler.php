@@ -68,4 +68,19 @@ add_filter( 'site_transient_update_core', function( $value ) {
     return $value;
 }, 9999 );
 
+
+
+// ===== ===== (3) Hide "Updates" menu & capability ===== =====
+
+add_action( 'admin_menu', function() {
+    remove_menu_page( 'update-core.php' );
+}, 999 );
+
+add_filter( 'map_meta_cap', function( $caps, $cap ) {
+    if ( 'update_core' === $cap || 'update_plugins' === $cap || 'update_themes' === $cap ) {
+        return [ 'do_not_allow' ];
+    }
+    return $caps;
+}, 10, 2 );
+
 ?>
